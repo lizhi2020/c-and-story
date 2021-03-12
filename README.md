@@ -4,9 +4,10 @@ Sometimes c and c++ is boring. How about listening my story?
 
 This project is aimed to discuss about some confusing problem we might have when using C/C++.
 
-# directory
+## Directory
 
 * [what would happend if we print after fclose(1)](./article/close_and_printf.md)
+* [how decode error happen](./article/decode_error.md)
 
 ## Contributing
 
