@@ -65,5 +65,5 @@ surprise!
 
 ## 引用
 本文部分参考以下资料:
-[fclose(stdout)和close(1)的区别](https://blog.csdn.net/wangzuxi/article/details/43445599)
-[printf()详解之终极无惑](https://cloud.tencent.com/developer/article/1176463)
+* [fclose(stdout)和close(1)的区别](https://blog.csdn.net/wangzuxi/article/details/43445599)
+* [printf()详解之终极无惑](https://cloud.tencent.com/developer/article/1176463)
