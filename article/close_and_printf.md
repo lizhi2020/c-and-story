@@ -60,6 +60,13 @@ surprise!
 现在我们差不多可以解释那两个问题了：
 1. fclose(stdout)和close(1)有什么区别？
    前者是在关闭一个文件，后者是在关闭一个描述符。`fclose(stdout)`等价于`close(stdout对应的描述符)`。注意stdout对应描述符不一定是1！
+   合法情况下，一个FILE指针必然对应一个描述符,一个描述符必然对应一个文件（或设备）。但反之则不然，一个文件可以有多个描述符打开它，而一个描述符又可以有多个FILE指针指向。代码示例如下：
+   ```
+    FILE* fp1 = fdopen(1,"w");
+    FILE* fp2 = fdopen(1,"w");
+    printf("%x %x\n",fp1,fp2);
+    //fp1,fp2对应同一个描述符，但fp1!=fp2
+   ```
 2. fclose(stdout)或者close(1)之后printf还有效吗？
    当然是无效了，`printf`会返回错误值-1
 
