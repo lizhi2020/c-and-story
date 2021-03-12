@@ -1,8 +1,13 @@
+English | [中文](./README.zh-CN.md)
 # c-and-story
 Sometimes c and c++ is boring. How about listening my story?
 
-本项目主要目的并不在于帮助新手快速入门C/C++，而是试图以清晰明了的形式解释C/C++中那些令人疑惑的问题。
+This project is aimed to discuss about some confusing problem we might have when using C/C++.
 
-# 目录
+# directory
 
-* [close(1)之后，printf会发生什么](./article/close_and_printf.md)
+* [what would happend if we print after fclose(1)](./article/close_and_printf.md)
+
+## Contributing
+
+Any type of contribution is welcome.
