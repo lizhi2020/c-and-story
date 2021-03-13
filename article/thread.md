@@ -18,7 +18,8 @@ int main() {
 而`terminate`会导致**整个程序**终止！
 
 也就是说如果你显式定义了一个`thread`，则必须显式的在某个地方调用`join()`或者`depatch()`
-另一种方案是动态申请thread的指针:`thread* p=new thread(f)`
+
+如果你既不想`join()`也不想`depatch()`,可以动态申请thread的指针:`thread* p=new thread(f)`,并且不`delete`它。但这不是好的编程写法，如非必要，不要这么做。
 
 现在我们将程序改写：
 ```
