@@ -11,8 +11,11 @@ int main() {
 }
 ```
 这个程序是有问题的，在windows下调试运行会报错'abort has been called'
-原因是thread对象在析构时会检查线程状态`if joinable()==true,then std::terminate()`
-`terminate`会导致**整个程序**终止！
+原因是thread对象在析构时会检查线程状态
+
+`if joinable()==true,then std::terminate()`
+
+而`terminate`会导致**整个程序**终止！
 
 也就是说如果你显式定义了一个`thread`，则必须显式的在某个地方调用`join()`或者`depatch()`
 另一种方案是动态申请thread的指针:`thread* p=new thread(f)`
