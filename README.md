@@ -9,6 +9,7 @@ This project is aimed to discuss about some confusing problem we might have when
 * [what would happend if we print after fclose(stdout)](./article/close_and_printf.md)
 * [how decode error happen](./article/decode_error.md)
 * [c++'s thread](./article/thread.md)
+* [some thought](./article/thoughts.md)
 
 ## Contributing
 

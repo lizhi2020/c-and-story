@@ -9,6 +9,7 @@ C/C++是否学起来太无聊？看看我们的故事如何？
 * [close(1)之后，printf会发生什么](./article/close_and_printf.md)
 * [怎么又乱码了](./article/decode_error.md)
 * [C++的多线程](./article/thread.md)
+* [一些感想](article/thoughts.md)
 
 ## 贡献
 
